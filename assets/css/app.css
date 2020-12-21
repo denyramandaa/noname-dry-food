@@ -174,12 +174,22 @@ p {
   margin-top: 16px;
   cursor: pointer;
 }
-.burger-menu {
-  width: 28px;
+.burger-menu-wrap {
   position: fixed;
-  left: 24px;
-  top: 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 8;
+  padding: 16px 24px;
+  background: transparent;
+  transition: all .5s linear;
+}
+.burger-menu-wrap.active {
+  background: #533e32;
+}
+.burger-menu {
+  position: relative;
+  width: 28px;
 }
 .bg-brw-secondary {
   background-color: #D6C9BB;
@@ -212,6 +222,10 @@ p {
 .h2-sub {
   font-size: 48px;
 }
+.bg-cover-center {
+  background-position: center;
+  background-size: cover;
+}
 @media screen and (min-width: 1025px) {
   .img-product {
     padding-bottom: 0;
@@ -237,7 +251,7 @@ p {
   .close-button {
     display: none !important;
   }
-  .burger-menu {
+  .burger-menu-wrap {
     display: none;
   }
   .pt-80-px {

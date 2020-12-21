@@ -1,7 +1,7 @@
 $(document).ready(function() {
     'use strict';
     function initSwiper() {
-      swiper = new Swiper('.swiper--jumbotron', {
+      new Swiper('.swiper--jumbotron', {
           effect: 'fade',
           followFinger: false,
           centeredSlides: true,
@@ -29,17 +29,37 @@ $(document).ready(function() {
           effect: 'slide',
           followFinger: true,
           centeredSlides: true,
-          slidesPerView: 1.2,
-          spaceBetween: 0,
+          slidesPerView: 1.3,
+          spaceBetween: 28,
           pagination: {
             el: '.product--pagination',
             clickable: true
           },
+          slidesOffsetBefore: 15
+      });
+    }
+
+    function initSwiperGallery(){
+      new Swiper('.swiper--gallery', {
+        effect: 'coverflow',
+        centeredSlides: true,
+        slidesPerView: 1.5,
+        speed: 800,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 350,
+            modifier: 1
+        }
       });
     }
     initSwiper();
+    initSwiperGallery();
     if(window.innerWidth <= 1024) { 
       initSwiperProducts();
+      $(window).scroll(function() {
+        window.scrollY  > document.getElementsByClassName('jumbotron')[0].clientHeight/2 ? $('.burger-menu-wrap').addClass('active') : $('.burger-menu-wrap').removeClass('active')
+      });
     }
 });
 function openMenu() {
