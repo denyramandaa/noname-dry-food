@@ -1,5 +1,26 @@
+::-webkit-input-placeholder {
+  color:#533E32 !important;
+}
+
+::-moz-placeholder {
+  color:#533E32 !important;
+}
+
+::-ms-placeholder {
+  color:#533E32 !important;
+}
+
+::placeholder {
+  color:#533E32 !important;
+}
 :focus {
   outline: none;
+}
+.btn-send-msg {
+  background-color: #F0EAE3;
+  border-radius: 8px;
+  color: #533E32;
+  font-weight: bold;
 }
 img {
   width: 100%;
@@ -54,7 +75,7 @@ p {
   margin: 24px;
 }
 .overlay-side {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 6;
@@ -204,11 +225,19 @@ p {
   background-size: cover;
   padding-bottom: 100%;
 }
+.img-article {
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 56.25%;
+}
 .txt-brw {
   color: #533E32;
 }
 .txt-gold-w {
   color: #DBBF80;
+}
+.txt-pink-w {
+  color: #C5AC9F;
 }
 .pt-80-px {
   padding-top: 60px;
@@ -225,6 +254,15 @@ p {
 .bg-cover-center {
   background-position: center;
   background-size: cover;
+}
+.articles a {
+  display: block;
+  text-decoration: none;
+}
+.article-swiper-button img {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1025px) {
   .img-product {
@@ -259,5 +297,8 @@ p {
   }
   .py-80-px {
     padding: 80px 0;
+  }
+  footer.footer {
+    display: none;
   }
 }
