@@ -96,14 +96,14 @@ p {
 .border-grey-d {
   border-color: #CCCCCC;
 }
-.color-brown-d {
-  color: #533E32;
+.bg-brown-d {
+  background-color: #533E32;
 }
 .color-grey-d {
   color: #999;
 }
-.bg-brown-d {
-  background-color: #533E32;
+.color-brown-d {
+  color: #533E32 !important;
 }
 .bg-brown-d-before {
   display: none;
@@ -135,9 +135,6 @@ p {
 }
 .main {
   padding: 0;
-}
-.jumbotron {
-  background: #f0eae3;
 }
 .bg-cover-center {
   background-position: center;
@@ -244,6 +241,15 @@ p {
 }
 .swiper--products .swiper-wrapper {
   width: auto;
+}
+.swiper--products a {
+  text-decoration: none;
+}
+.swiper--products .underline {
+  text-decoration: underline;
+}
+.swiper--products .underline:hover {
+  color: #8c6753;
 }
 .py-80-px {
   padding: 60px 0;

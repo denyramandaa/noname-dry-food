@@ -41,6 +41,7 @@ $(document).ready(function() {
         centeredSlides: true,
         slidesPerView: 1.5,
         speed: 800,
+        grabCursor: true,
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
@@ -65,6 +66,17 @@ $(document).ready(function() {
           },
       });
     }
+
+    $(window).scroll(function() {
+      $(".scroll-detection").each(function() {
+        if($(window).scrollTop() >= $(this).offset().top-300 && $(window).scrollTop() <= $(this).offset().top + ($(this).outerHeight()-300)) {
+          $(".navbar-list ."+this.id).addClass('color-brown-d');
+        } else {
+          $(".navbar-list ."+this.id).removeClass('color-brown-d');
+        }
+      });
+    });
+
     initSwiper();
     initSwiperGallery();
     initSwiperArticle();

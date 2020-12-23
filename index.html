@@ -24,25 +24,25 @@
         <div class="navbar-side px-d-32">
           <div class="w-100 navbar-list">
             <div class="w-100 navbar-home pt-4">
-              <p class="color-brown-d fw-bold" onclick="gointTo('jumbotron')">Home</p>
+              <p class="color-grey-d color-brown-d fw-bold jumbotron" onclick="gointTo('jumbotron')">Home</p>
             </div>
             <div class="w-100 navbar-about-us pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('about-us')">About Us</p>
+              <p class="color-grey-d fw-bold about-us" onclick="gointTo('about-us')">About Us</p>
             </div>
             <div class="w-100 navbar-product pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('our-product')">Product</p>
+              <p class="color-grey-d fw-bold our-product" onclick="gointTo('our-product')">Product</p>
             </div>
             <div class="w-100 navbar-gallery pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('our-gallery')">Gallery</p>
+              <p class="color-grey-d fw-bold our-gallery" onclick="gointTo('our-gallery')">Gallery</p>
             </div>
             <div class="w-100 navbar-articles pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('articles')">Articles</p>
+              <p class="color-grey-d fw-bold articles" onclick="gointTo('articles')">Articles</p>
             </div>
             <div class="w-100 navbar-testimony pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('testimony')">Testimony</p>
+              <p class="color-grey-d fw-bold testimony" onclick="gointTo('testimony')">Testimony</p>
             </div>
             <div class="w-100 navbar-contact-us pt-4">
-              <p class="color-grey-d fw-bold" onclick="gointTo('contact-us')">Contact Us</p>
+              <p class="color-grey-d fw-bold contact-us" onclick="gointTo('contact-us')">Contact Us</p>
             </div>
           </div>
           <div class="header-footer">
@@ -79,7 +79,7 @@
           <img src="assets/icon/burger.png" alt="burger-icon">
         </div>
       </div>
-      <div class="jumbotron vh-100 position-relative" id="jumbotron">
+      <div class="jumbotron vh-100 position-relative scroll-detection" id="jumbotron">
         <div class="swiper-container swiper--jumbotron position-absolute w-100 h-100 top-0 start-0">
           <div class="swiper-wrapper">
             <div class="swiper-slide vh-100 w-100 bg-cover-center" style="background-image: url(assets/img/01.jpg)"></div>
@@ -103,42 +103,44 @@
           </div>
         </div>
       </div>
-      <div class="about-us py-80-px" id="about-us">
-        <div class="content-wrapper text-center">
-          <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">About Us</h2>
-          <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+      <div class="scroll-detection" id="about-us">
+        <div class="about-us py-80-px">
+          <div class="content-wrapper text-center">
+            <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">About Us</h2>
+            <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+          </div>
         </div>
-      </div>
-      <div class="why-us py-80-px" id="why-us">
-        <div class="content-wrapper text-center">
-          <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Why Us?</h2>
-        </div>
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
-              <img class="img-con mx-auto" src="assets/icon/01.png" alt="icon">
-              <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
-              <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
-            </div>
-            <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
-              <img class="img-con mx-auto" src="assets/icon/02.png" alt="icon">
-              <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
-              <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
-            </div>
-            <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
-              <img class="img-con mx-auto" src="assets/icon/03.png" alt="icon">
-              <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
-              <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
-            </div>
-            <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
-              <img class="img-con mx-auto" src="assets/icon/04.png" alt="icon">
-              <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
-              <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+        <div class="why-us py-80-px">
+          <div class="content-wrapper text-center">
+            <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Why Us?</h2>
+          </div>
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
+                <img class="img-con mx-auto" src="assets/icon/01.png" alt="icon">
+                <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
+                <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+              </div>
+              <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
+                <img class="img-con mx-auto" src="assets/icon/02.png" alt="icon">
+                <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
+                <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+              </div>
+              <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
+                <img class="img-con mx-auto" src="assets/icon/03.png" alt="icon">
+                <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
+                <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+              </div>
+              <div class="col-6 col-lg-3 px-lg-5 mb-5 mb-lg-0 text-center">
+                <img class="img-con mx-auto" src="assets/icon/04.png" alt="icon">
+                <h3 class="font-lora fw-bold txt-brw mt-4 lg:mt-12 text-xl">Lorem Ipsum</h3>
+                <p class="txt-brw mt-2 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="our-product py-80-px bg-brw-secondary" id="our-product">
+      <div class="our-product py-80-px bg-brw-secondary scroll-detection" id="our-product">
         <div class="content-wrapper text-center">
           <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Our Product</h2>
           <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
@@ -149,7 +151,7 @@
                 <div class="row">
                   <div class="col-12 col-lg-6 img-product" style="background-image: url('assets/img/02.jpg')"></div>
                   <div class="col-12 col-lg-6 bg-white px-4 py-5">
-                    <h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4>
+                    <a href="#"><h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4></a>
                     <p class="mt-3 txt-brw mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
                     <p class="font-lora mb-4 fw-bold fs-5 txt-gold-w">Rp. 50.000</p>
                     <a href="#" class="underline txt-brw text-lg fw-bold">Order via Whatsapp</a>
@@ -160,7 +162,7 @@
                 <div class="row">
                   <div class="col-12 col-lg-6 img-product" style="background-image: url('assets/img/03.jpg')"></div>
                   <div class="col-12 col-lg-6 bg-white px-4 py-5">
-                    <h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4>
+                    <a href="#"><h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4></a>
                     <p class="mt-3 txt-brw mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
                     <p class="font-lora mb-4 fw-bold fs-5 txt-gold-w">Rp. 50.000</p>
                     <a href="#" class="underline txt-brw text-lg fw-bold">Order via Whatsapp</a>
@@ -171,7 +173,7 @@
                 <div class="row flex-lg-row-reverse">
                   <div class="col-12 col-lg-6 img-product" style="background-image: url('assets/img/04.jpg')"></div>
                   <div class="col-12 col-lg-6 bg-white px-4 py-5">
-                    <h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4>
+                    <a href="#"><h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4></a>
                     <p class="mt-3 txt-brw mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
                     <p class="font-lora mb-4 fw-bold fs-5 txt-gold-w">Rp. 50.000</p>
                     <a href="#" class="underline txt-brw text-lg fw-bold">Order via Whatsapp</a>
@@ -182,7 +184,7 @@
                 <div class="row flex-lg-row-reverse">
                   <div class="col-12 col-lg-6 img-product" style="background-image: url('assets/img/05.jpg')"></div>
                   <div class="col-12 col-lg-6 bg-white px-4 py-5">
-                    <h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4>
+                    <a href="#"><h4 class="fw-bold font-lora txt-brw">Lorem Ipsum</h4></a>
                     <p class="mt-3 txt-brw mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
                     <p class="font-lora mb-4 fw-bold fs-5 txt-gold-w">Rp. 50.000</p>
                     <a href="#" class="underline txt-brw text-lg fw-bold">Order via Whatsapp</a>
@@ -192,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="our-gallery py-80-px" id="our-gallery">
+      <div class="our-gallery py-80-px scroll-detection" id="our-gallery">
         <div class="content-wrapper text-center">
           <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Our Gallery</h2>
           <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
@@ -208,7 +210,7 @@
           </div>
         </div>
       </div>
-      <div class="articles py-80-px bg-brw-secondary" id="articles">
+      <div class="articles py-80-px bg-brw-secondary scroll-detection" id="articles">
         <div class="content-wrapper text-center">
           <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Articles</h2>
           <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
@@ -287,7 +289,7 @@
           <img class="mx-1 next" src="assets/icon/arr-right-brw.png" alt="arr-right">
         </div>
       </div>
-      <div class="testimony py-80-px" id="testimony">
+      <div class="testimony py-80-px scroll-detection" id="testimony">
         <div class="content-wrapper text-center">
           <h2 class="font-lora h2-sub txt-brw fw-bold mb-3">Testimony</h2>
           <p class="txt-brw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque at neque duis orci morbi vestibulum.</p>
@@ -342,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-brw-secondary py-80-px px-3 px-lg-5 contact-us" id="contact-us">
+      <div class="bg-brw-secondary py-80-px px-3 px-lg-5 contact-us scroll-detection" id="contact-us">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 img-product" style="background-image:url('assets/img/contact-us.jpg')">
